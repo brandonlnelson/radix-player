@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appbrain="http://schemas.android.com/apk/lib/com.appbrain"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/outer_layout"
+    android:layout_marginBottom="50dp" >
+
+
+ <com.appbrain.AppBrainBanner 
+  android:layout_width="fill_parent" 
+  android:layout_height="50dp" 
+  appbrain:design="2" appbrain:colors="3"/>
+                    
+                
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number to convert: " />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Number" >
+
+        <requestFocus />
+    </EditText>
+
+    
+    
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert to base: " />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Base" />
+
+    
+                  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result= " />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Result" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+</LinearLayout>
+
+    <com.tapfortap.AdView
+                android:id="@+id/ad_view"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                 /> 
+                 
+    </RelativeLayout>
